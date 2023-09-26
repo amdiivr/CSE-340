@@ -4,3 +4,202 @@
 *:after {
   box-sizing: border-box;
 }
+
+/* All HTML style */
+
+html {
+  background-image: url(/images/site/checkerboard.jpg);
+}
+
+body {
+  margin: 40px 80px;
+  background: white;
+  border: 5px solid;
+  border-radius: 5px;
+  border-color: rgb(47, 175, 225);
+}
+
+/* header style */
+
+#top-header {
+  padding: 0;
+  margin: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.siteName a, #tools a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+.siteName {
+  text-decoration-color: black;
+  padding: 15px;
+
+}
+#tools {
+  text-align: end;
+  padding: 10px;
+
+}
+
+/* navegation style */
+
+nav {
+  background-color: black;
+  margin: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  font-size: 25px;
+  display: inline-block;
+  color: white;
+  padding: 10px 90px;
+}
+
+/* main style */
+
+#welcome {
+  padding: 0;
+  margin: 40px 10px;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+#welcome h1 {
+  grid-row: 1 / 2;
+  padding: 0;
+  margin: 10px;
+  font-size: 35px;
+}
+#welcome img {
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+}
+#dmc-delorean {
+  grid-row: 2 / 3;
+  position: absolute;
+  margin: 12%;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.46);
+}
+#dmc-delorean, h2 p {
+  font-size: 33px;
+  color: rgb(47, 175, 225);
+}
+
+/* upgrades */
+
+#secondPart {
+  padding: 0;
+  margin: 40px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#upgrades {
+  grid-column: 1 / 2;
+}
+#upgrades, h2 {
+  font-size: 30px;
+  margin: 10px;
+}
+#reviews {
+  grid-column: 2 / 3;
+}
+#frame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.picture1, .a1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.picture2, .a2{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.picture3, .a3{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.picture4, .a4{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.picture1, .picture2, .picture3, .picture4{
+  border: solid black;
+  background-color: rgb(47, 175, 225);
+  padding: 30px;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+.a1, .a2, .a3, .a4 {
+  margin-top: 160px;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+#reviews, ul li {
+  font-size: 30px;
+}
+footer {
+  font-size: 20px;
+  padding: 0px;
+  margin: 10px 10px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 414px) {
+
+  html {
+    background-image: none;
+  }
+  
+  body {
+    margin: 0;
+    background: none;
+    border: none;
+  }
+
+  #top-header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav {
+    background-color: black;
+    margin: none;
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li {
+    font-size: 25px;
+    color: white;
+    padding: 10px 90px;
+  }
+
+  #welcome {
+    padding: 0;
+    margin: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #secondPart {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+}
