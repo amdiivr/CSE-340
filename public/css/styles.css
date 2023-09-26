@@ -180,7 +180,6 @@ footer {
 
   nav {
     background-color: black;
-    margin: none;
     display: flex;
     flex-direction: row;
   }
@@ -191,25 +190,17 @@ footer {
   }
 
   #welcome {
-    padding: 0;
-    margin: none;
+    padding: 0;;
     display: flex;
     flex-direction: column;
   }
   #secondPart {
-    margin: none;
     display: flex;
     flex-direction: column;
   }
   #dmc-delorean {
-  position: none;
-  margin: none;
   padding: 0;
   background: rgba(255, 255, 255, 0.46);
 }
-#dmc-delorean, h2 p {
-  font-size: none;
-}
-
 
 }
