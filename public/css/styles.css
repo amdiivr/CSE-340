@@ -103,9 +103,13 @@ nav ul li {
 #upgrades {
   grid-column: 1 / 2;
 }
-#upgrades, h2 {
+#upgrades h2 {
   font-size: 30px;
-  margin: 10px;
+  margin-bottom: 50px;
+}
+#reviews h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 #reviews {
   grid-column: 2 / 3;
@@ -145,8 +149,10 @@ nav ul li {
   padding-left: 30px;
 }
 
-#reviews, ul li {
+#reviews ul li {
   font-size: 30px;
+  padding: 0;
+  margin-bottom: 50px;
 }
 footer {
   font-size: 20px;
