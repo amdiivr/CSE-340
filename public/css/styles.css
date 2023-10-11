@@ -167,32 +167,37 @@ footer {
   }
   
   body {
+    max-width: 100%;
     margin: 0;
-    background: none;
     border: none;
+    display: flex;
+    flex-direction: row;
   }
 
-  #top-header {
-    padding: 0;
-    margin: 0;
+  nav ul {
     display: flex;
+    flex-direction: row;
   }
 
   nav {
     background-color: black;
-    display: flex;
-    flex-direction: row;
   }
   nav ul li {
     font-size: 25px;
     color: white;
-    padding: 10px 90px;
+    padding: 15px;
   }
 
   #welcome {
     padding: 0;;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+  #welcome h1 {
+    font-size: 100%;
+  }
+  #welcome img {
+    width: 90%;
   }
   #secondPart {
     display: flex;
@@ -201,6 +206,7 @@ footer {
   #dmc-delorean {
   padding: 0;
   background: rgba(255, 255, 255, 0.46);
+  font-size: 100%;
 }
 
 }
